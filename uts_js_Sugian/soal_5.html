@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soal 5</title>
+</head>
+<body>
+
+    <button id="tampilbadak">badak</button>
+    <button id="tampilsapi">sapi</button>
+    <button id="tampilgajah">gajah</button>
+    <button id="tampilgagak">gagak</button>
+    <img id="gambar" src="">
+
+    <script>
+        const btnGambarbadak = document.getElementById("tampilbadak");
+        const btnGambarsapi = document.getElementById("tampilsapi");
+        const btnGambargajah = document.getElementById("tampilgajah");
+        const btnGambargagak = document.getElementById("tampilgagak");
+
+        function tampilbadak(){
+            let image = document.getElementById("gambar");
+            image.src = "image/badak.jpeg";
+        }
+
+        function tampilsapi(){
+            let image = document.getElementById("gambar");
+            image.src = "image/sapi.jpeg";
+        }
+
+        function tampilgajah(){
+            let image = document.getElementById("gambar");
+            image.src = "image/gajah.jpeg";
+        }
+
+        function tampilgagak(){
+            let image = document.getElementById("gambar");
+            image.src = "image/gagak.jpg";
+        }
+
+         btnGambarbadak.addEventListener("click", tampilbadak);
+        btnGambarsapi.addEventListener("click", tampilsapi);
+        btnGambargajah.addEventListener("click", tampilgajah);
+        btnGambargagak.addEventListener("click", tampilgagak);
+
+    </script>
+    
+</body>
+</html>
